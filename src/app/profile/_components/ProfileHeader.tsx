@@ -87,10 +87,12 @@ function ProfileHeader({ userStats, userData, user }: ProfileHeaderProps) {
           blur-xl opacity-50 group-hover:opacity-75 transition-opacity"
           />
           <Image 
-            src={user.imageUrl}
-            alt="Profile"
-            className="w-24 h-24 rounded-full border-4 border-gray-800/50 relative z-10 group-hover:scale-105 transition-transform"
-          />
+  src={user.imageUrl}
+  alt="Profile"
+  width={96}  // Adjust based on your design
+  height={96} // Adjust based on your design
+  className="w-24 h-24 rounded-full border-4 border-gray-800/50 relative z-10 group-hover:scale-105 transition-transform"
+/>
           {userData.isPro && (
             <div
               className="absolute -top-2 -right-2 bg-gradient-to-r from-purple-500 to-purple-600 p-2
